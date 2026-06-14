@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Church Home</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { text-align: center; background: #f9f9f9; }
+        header { background: #1a252f; color: white; padding: 20px; }
+        
+        /* Slider Container */
+        .slider-frame {
+            max-width: 800px;
+            height: 400px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .slide-images {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+        .img-container { width: 33.33%; height: 100%; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Animation for 3 images sliding */
+        @keyframes slide {
+            0% { margin-left: 0%; }
+            30% { margin-left: 0%; }
+            33% { margin-left: -100%; }
+            63% { margin-left: -100%; }
+            66% { margin-left: -200%; }
+            96% { margin-left: -200%; }
+            100% { margin-left: 0%; }
+        }
+
+        .welcome-text { padding: 30px; max-width: 600px; margin: 0 auto; }
+        .welcome-text h2 { color: #1a252f; margin-bottom: 10px; }
+        .welcome-text p { color: #555; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Church</h1>
+        <p>Faith, Community, and Love</p>
+    </header>
+
+    <!-- Photo Slider -->
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <!-- Replace URL below with your first church photo link -->
+                <img src="https://unsplash.com" alt="Church Sanctuary">
+            </div>
+            <div class="img-container">
+                <!-- Replace URL below with your second church photo link -->
+                <img src="https://unsplash.com" alt="Community Gathering">
+            </div>
+            <div class="img-container">
+                <!-- Replace URL below with your third church photo link -->
+                <img src="https://unsplash.com" alt="Worship Team">
+            </div>
+        </div>
+    </div>
+
+    <section class="welcome-text">
+        <h2>Join Us This Sunday</h2>
+        <p>Experience uplifting worship, powerful messages, and a warm community waiting to welcome you home.</p>
+    </section>
+
+</body>
+</html>
 
